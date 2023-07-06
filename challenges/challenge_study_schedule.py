@@ -1,5 +1,4 @@
 def study_schedule(permanence_period, target_time):
-    """Faça o código aqui."""
     result = 0
     if target_time is None or target_time <= 0:
         return None
