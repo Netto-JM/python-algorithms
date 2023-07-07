@@ -31,12 +31,12 @@ def merge_sort(array, start=0, end=None):
 
 def is_anagram(first_string, second_string):
     if len(first_string) == 0 and len(second_string) == 0:
-        return ('', '', False)
+        return ("", "", False)
     first_array = [char for char in first_string.lower()]
     second_array = [char for char in second_string.lower()]
     merge_sort(first_array, 0, len(first_array))
     merge_sort(second_array, 0, len(second_array))
-    ordered_first_string = ''.join(first_array)
-    ordered_second_string = ''.join(second_array)
+    ordered_first_string = "".join(first_array)
+    ordered_second_string = "".join(second_array)
     comparasion_result = ordered_first_string == ordered_second_string
     return (ordered_first_string, ordered_second_string, comparasion_result)
